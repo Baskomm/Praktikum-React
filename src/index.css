@@ -1,0 +1,81 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0; background: #f3f5f8; color: #17243b;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  max-width: 760px; margin: 32px auto; padding: 24px;
+  background: white; border-radius: 12px;
+}
+
+h1 { margin-top: 0; }
+
+label { display: block; margin-bottom: 8px; }
+
+.baris-form { display: flex; gap: 8px; flex-wrap: wrap; }
+
+input {
+  flex: 1 1 240px; min-width: 0; padding: 10px;
+  border: 1px solid #98a2b3; border-radius: 6px;
+}
+
+button {
+  padding: 10px 14px; cursor: pointer; border: 0;
+  border-radius: 6px; background: #17243b; color: white;
+}
+
+button:focus-visible, input:focus-visible {
+  outline: 3px solid #b97d00; outline-offset: 2px;
+}
+
+ul { list-style: none; padding: 0; }
+
+li {
+  display: flex; align-items: center; gap: 8px;
+  flex-wrap: wrap; padding: 12px 0; border-bottom: 1px solid #ddd;
+}
+
+li span { flex: 1 1 260px; overflow-wrap: anywhere; }
+
+.selesai span { text-decoration: line-through; }
+
+[role="alert"] { color: #b42318; }
+
+@media (max-width: 600px) { main { margin: 12px; padding: 16px; } }
+
+/* ---------- Tambahan untuk tugas praktikum ---------- */
+
+button:disabled { opacity: 0.45; cursor: not-allowed; }
+
+button.sekunder {
+  background: white; color: #17243b; border: 1px solid #17243b;
+}
+
+button.sekunder[aria-pressed="true"] {
+  background: #17243b; color: white;
+}
+
+.navigasi {
+  max-width: 760px; margin: 24px auto 0; padding: 0 24px;
+  display: flex; gap: 8px; flex-wrap: wrap;
+}
+
+.filter { margin-bottom: 8px; }
+
+.form-edit { display: flex; gap: 8px; flex-wrap: wrap; flex: 1 1 100%; }
+
+.error-edit { flex: 1 1 100%; margin: 0; }
+
+article {
+  border: 1px solid #ddd; border-radius: 8px;
+  padding: 4px 16px; margin-bottom: 12px;
+}
+
+dt { font-weight: bold; margin-top: 8px; }
+dd { margin: 0; }
+
+footer { margin-top: 24px; color: #475467; font-size: 14px; }
+
+@media (max-width: 600px) { .navigasi { margin: 12px 12px 0; padding: 0; } }
